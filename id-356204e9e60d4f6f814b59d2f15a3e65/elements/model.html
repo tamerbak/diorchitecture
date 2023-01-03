@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>China Global Architecture</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>China Global Architecture</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-356204e9e60d4f6f814b59d2f15a3e65", type:"ArchimateModel", name:decodeURL("China+Global+Architecture"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-c7ff0312112249b4aaae569fed60a81c", contenttype:"Folder"});
+								dataFolders.push({id:"id-c7ff0312112249b4aaae569fed60a81c", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-a5b606e3c5fa447aba278109ffaf70be", contenttype:"Folder"});
+								dataFolders.push({id:"id-a5b606e3c5fa447aba278109ffaf70be", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-245f7e6a08cd4410aff2dc11c78f8658", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-245f7e6a08cd4410aff2dc11c78f8658", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("SA"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-226ebdcf156d4da58368f235066aea55", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-226ebdcf156d4da58368f235066aea55", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("SM"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-d9b14e8780d843188e389ee321f86486", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-d9b14e8780d843188e389ee321f86486", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("Client"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-699f76c30596466eb50be01e2a67730c", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-699f76c30596466eb50be01e2a67730c", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("CSC+Agent"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-59a298ec15f74ae8b1095dc586adc1b5", contenttype:"BusinessInterface"});
+										dataElements.push({id:"id-59a298ec15f74ae8b1095dc586adc1b5", type:"BusinessInterface", specialization:decodeURL(""), name:decodeURL("DSW+MP"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-a5b606e3c5fa447aba278109ffaf70be", contentid:"id-54bbae8569c0429eb32d71317caa070e", contenttype:"BusinessInterface"});
+										dataElements.push({id:"id-54bbae8569c0429eb32d71317caa070e", type:"BusinessInterface", specialization:decodeURL(""), name:decodeURL("Wishlist+Pages"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contenttype:"Folder"});
+								dataFolders.push({id:"id-59839be2ba774e849f5bfa7e9d9aabf3", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-c7678ee3901c48e39f56bc5ddfa2adb6", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-c7678ee3901c48e39f56bc5ddfa2adb6", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Salesforce"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-9314d64723724584b11bbbd8fcedec86", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-9314d64723724584b11bbbd8fcedec86", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("DSW+BFF"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-16daaca49e874354b2c42a52c2e8c672", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-16daaca49e874354b2c42a52c2e8c672", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Elastic+Serge"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-c830fe12a70d4b1aa288be0a54a44cf9", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-c830fe12a70d4b1aa288be0a54a44cf9", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Cegid+Y2"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-118c7402f3564ebd96b69824907bee30", contenttype:"ApplicationInterface"});
+										dataElements.push({id:"id-118c7402f3564ebd96b69824907bee30", type:"ApplicationInterface", specialization:decodeURL(""), name:decodeURL("APIM+CN"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-80a32c190d9a49e58270776e4ba4c8d0", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-80a32c190d9a49e58270776e4ba4c8d0", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Mulesoft+CN"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-28f58f1f42894c0bbcafd211d0beca7e", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-28f58f1f42894c0bbcafd211d0beca7e", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("CIM+CN"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-83223cce4a504f54bfe6073ab3a1cf92", contenttype:"ApplicationInterface"});
+										dataElements.push({id:"id-83223cce4a504f54bfe6073ab3a1cf92", type:"ApplicationInterface", specialization:decodeURL(""), name:decodeURL("Application+Interface"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-6ad870925857484ba4af8f2dd08626c5", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-6ad870925857484ba4af8f2dd08626c5", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("AZ+Functions"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-8a624b58fb104feabdee3a149cd4edc5", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-8a624b58fb104feabdee3a149cd4edc5", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("AZ+Func+Replications"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-59839be2ba774e849f5bfa7e9d9aabf3", contentid:"id-2655e87bee664ea58bc0922c2bcfeae8", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-2655e87bee664ea58bc0922c2bcfeae8", type:"ApplicationComponent", specialization:decodeURL(""), name:decodeURL("Wishlist+Webapp"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-b49a926e4e8843b78cc2335c4ac86d89", contenttype:"Folder"});
+								dataFolders.push({id:"id-b49a926e4e8843b78cc2335c4ac86d89", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-5343f514ae124e5b991c759e637d9149", contenttype:"Folder"});
+								dataFolders.push({id:"id-5343f514ae124e5b991c759e637d9149", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-cbfeaa9cfc6a4ccd89d28eb390a2b96a", contenttype:"Folder"});
+								dataFolders.push({id:"id-cbfeaa9cfc6a4ccd89d28eb390a2b96a", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-d0b0c5aa58564118934bb76cbc05d257", contenttype:"Folder"});
+								dataFolders.push({id:"id-d0b0c5aa58564118934bb76cbc05d257", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-737fa607958e429fb13d8457af2e6514", contenttype:"Folder"});
+								dataFolders.push({id:"id-737fa607958e429fb13d8457af2e6514", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-356204e9e60d4f6f814b59d2f15a3e65", contentid:"id-635f175a018d4fd5adcff1a7e54560e9", contenttype:"Folder"});
+								dataFolders.push({id:"id-635f175a018d4fd5adcff1a7e54560e9", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-a731f7b215704f618d1d6a73ce5c7a8b", type:"ArchimateDiagramModel", name:decodeURL("China+Architecture+Map"), documentation:decodeURL("Map+View+with+View+References+to+all+the+other+Views+in+the+model")});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-f0ffa76402a84711b04e89ca76f41d71", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-544f076a1c2a45b5b49afd7e1e267a25", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-dad68a9d68c1403893aa81b32e9a212c", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-627f4d17c878496ea61cc81872c10fc0", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-5862d04861c44c2c992651266f7488d3", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-7b6796067503465dbd5172e14255b431", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-0ccf0e9ad34e49958ccee002a307f573", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-017ee646d44a4b67b67cc0d3b6466aed", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-902b18d6db784eb1a06f43eaa7007fa7", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-ec1802b0f8d949908efa14d41d7703e1", contenttype:"ArchimateDiagramModel"});
+												dataViewsContent.push({viewid:"id-a731f7b215704f618d1d6a73ce5c7a8b", contentid:"id-ce7c4d622d52475b8e4b17c87e03384d", contenttype:"ArchimateDiagramModel"});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-f0ffa76402a84711b04e89ca76f41d71", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-f0ffa76402a84711b04e89ca76f41d71", type:"ArchimateDiagramModel", name:decodeURL("Goal+and+Principal+View"), documentation:decodeURL("The+goal+realization+viewpoint+allows+to+model+the+refinement+of+%28high-level%29+goals+into+more+tangible+goals%2C+and+the+refinement+of+tangible+goals+into+requirements+or+constraints+that+describe+the+properties+that+are+needed+to+realize+the+goals.+The+refinement+of+goals+into+sub-goals+is+modeled+using+the+aggregation+relationship.+The+refinement+of+goals+into+requirements+is+modeled+using+the+realization+relationship.%0D%0A%0D%0AIn+addition%2C+the+principles+may+be+modeled+that+guide+the+refinement+of+goals+into+requirements.")});
+													dataProperties.push({conceptid:"id-f0ffa76402a84711b04e89ca76f41d71", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Stakeholders%2C+business+managers%2C+enterprise+and+ICT+architects%2C+business+analysts%2C+requirements+managers")});
+													dataProperties.push({conceptid:"id-f0ffa76402a84711b04e89ca76f41d71", propkey:decodeURL("Concerns"), propvalue:decodeURL("Architecture+mission%2C+strategy+and+tactics%2C+motivation")});
+													dataProperties.push({conceptid:"id-f0ffa76402a84711b04e89ca76f41d71", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding")});
+													dataProperties.push({conceptid:"id-f0ffa76402a84711b04e89ca76f41d71", propkey:decodeURL("Scope"), propvalue:decodeURL("Motivation")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-dad68a9d68c1403893aa81b32e9a212c", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-dad68a9d68c1403893aa81b32e9a212c", type:"ArchimateDiagramModel", name:decodeURL("Business+Product+View"), documentation:decodeURL("The+product+viewpoint+depicts+the+value+that+these+products+offer+to+the+customers+or+other+external+parties+involved+and+shows+the+composition+of+one+or+more+products+in+terms+of+the+constituting+%28business%2C+application%2C+or+technology%29+services%2C+and+the+associated+contract%28s%29+or+other+agreements.+It+may+also+be+used+to+show+the+interfaces+%28channels%29+through+which+this+product+is+offered%2C+and+the+events+associated+with+the+product.+A+product+viewpoint+is+typically+used+in+product+development+to+design+a+product+by+composing+existing+services+or+by+identifying+which+new+services+have+to+be+created+for+this+product%2C+given+the+value+a+customer+expects+from+it.+It+may+then+serve+as+input+for+business+process+architects+and+others+that+need+to+design+the+processes+and+ICT+realizing+these+products.")});
+													dataProperties.push({conceptid:"id-dad68a9d68c1403893aa81b32e9a212c", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Product+developers%2C+product+managers%2C+process+and+domain+architects")});
+													dataProperties.push({conceptid:"id-dad68a9d68c1403893aa81b32e9a212c", propkey:decodeURL("Concerns"), propvalue:decodeURL("Product+development%2C+value+offered+by+the+products+of+the+enterprise")});
+													dataProperties.push({conceptid:"id-dad68a9d68c1403893aa81b32e9a212c", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding")});
+													dataProperties.push({conceptid:"id-dad68a9d68c1403893aa81b32e9a212c", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-544f076a1c2a45b5b49afd7e1e267a25", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-544f076a1c2a45b5b49afd7e1e267a25", type:"ArchimateDiagramModel", name:decodeURL("Layered+View"), documentation:decodeURL("The+layered+viewpoint+pictures+several+layers+and+aspects+of+an+Enterprise+Architecture+in+one+diagram.+There+are+two+categories+of+layers%2C+namely+dedicated+layers+and+service+layers.+The+layers+are+the+result+of+the+use+of+the+%E2%80%9Cgrouping%E2%80%9D+relationship+for+a+natural+partitioning+of+the+entire+set+of+objects+and+relationships+that+belong+to+a+model.+The+technology%2C+application%2C+process%2C+and+actor%2Frole+layers+belong+to+the+first+category.+The+structural+principle+behind+a+fully+layered+viewpoint+is+that+each+dedicated+layer+exposes%2C+by+means+of+the+%E2%80%9Crealization%E2%80%9D+relationship%2C+a+layer+of+services%2C+which+are+further+on+%E2%80%9Cserving%E2%80%9D+the+next+dedicated+layer.+Thus%2C+we+can+easily+separate+the+internal+structure+and+organization+of+a+dedicated+layer+from+its+externally+observable+behavior+expressed+as+the+service+layer+that+the+dedicated+layer+realizes.+The+order%2C+number%2C+or+nature+of+these+layers+are+not+fixed%2C+but+in+general+a+%28more+or+less%29+complete+and+natural+layering+of+an+ArchiMate+model+should+contain+the+succession+of+layers+depicted+in+the+example+given+below.+However%2C+this+example+is+by+no+means+intended+to+be+prescriptive.+The+main+goal+of+the+layered+viewpoint+is+to+provide+an+overview+in+one+diagram.+Furthermore%2C+this+viewpoint+can+be+used+as+support+for+impact+of+change+analysis+and+performance+analysis+or+for+extending+the+service+portfolio.")});
+													dataProperties.push({conceptid:"id-544f076a1c2a45b5b49afd7e1e267a25", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Enterprise%2C+process%2C+application%2C+infrastructure%2C+and+domain+architects")});
+													dataProperties.push({conceptid:"id-544f076a1c2a45b5b49afd7e1e267a25", propkey:decodeURL("Concerns"), propvalue:decodeURL("Consistency%2C+reduction+of+complexity%2C+impact+of+change%2C+flexibility")});
+													dataProperties.push({conceptid:"id-544f076a1c2a45b5b49afd7e1e267a25", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding%2C+informing")});
+													dataProperties.push({conceptid:"id-544f076a1c2a45b5b49afd7e1e267a25", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-627f4d17c878496ea61cc81872c10fc0", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-627f4d17c878496ea61cc81872c10fc0", type:"ArchimateDiagramModel", name:decodeURL("Information+Structure+View"), documentation:decodeURL("The+information+structure+viewpoint+is+comparable+to+the+traditional+information+models+created+in+the+development+of+almost+any+information+system.+It+shows+the+structure+of+the+information+used+in+the+enterprise+or+in+a+specific+business+process+or+application%2C+in+terms+of+data+types+or+%28object-oriented%29+class+structures.+Furthermore%2C+it+may+show+how+the+information+at+the+business+level+is+represented+at+the+application+level+in+the+form+of+the+data+structures+used+there%2C+and+how+these+are+then+mapped+onto+the+underlying+technology+infrastructure%3B+e.g.%2C+by+means+of+a+database+schema.")});
+													dataProperties.push({conceptid:"id-627f4d17c878496ea61cc81872c10fc0", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Domain+and+information+architects")});
+													dataProperties.push({conceptid:"id-627f4d17c878496ea61cc81872c10fc0", propkey:decodeURL("Concerns"), propvalue:decodeURL("Structure+and+dependencies+of+the+used+data+and+information%2C+consistency+and+completeness")});
+													dataProperties.push({conceptid:"id-627f4d17c878496ea61cc81872c10fc0", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing")});
+													dataProperties.push({conceptid:"id-627f4d17c878496ea61cc81872c10fc0", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FSingle+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-5862d04861c44c2c992651266f7488d3", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-5862d04861c44c2c992651266f7488d3", type:"ArchimateDiagramModel", name:decodeURL("Business+Function+View"), documentation:decodeURL("Shows+the+main+business+functions+of+an+organization+and+their+relationships+in+terms+of+the+flows+of+information%2C+value%2C+or+goods+between+them.+Business+functions+are+used+to+represent+the+most+stable+aspects+of+a+company+in+terms+of+the+primary+activities+it+performs%2C+regardless+of+organizational+changes+or+technological+developments.+Therefore%2C+the+business+function+architecture+of+companies+that+operate+in+the+same+market+often+exhibit+close+similarities.+The+business+function+example+provides+high-level+insight+in+the+general+operations+of+the+company%2C+and+can+be+used+to+identify+necessary+competencies%2C+or+to+structure+an+organization+according+to+its+main+activities.")});
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-7b6796067503465dbd5172e14255b431", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-7b6796067503465dbd5172e14255b431", type:"ArchimateDiagramModel", name:decodeURL("Business+Process+View+"), documentation:decodeURL("The+business+process+cooperation+viewpoint+is+used+to+show+the+relationships+of+one+or+more+business+processes+with+each+other+and%2For+with+their+environment.+It+can+be+used+both+to+create+a+high-level+design+of+business+processes+within+their+context+and+to+provide+an+operational+manager+responsible+for+one+or+more+such+processes+with+insight+into+their+dependencies.+Important+aspects+of+business+process+cooperation+are%3A%0D%0A%E2%80%A2++Causal+relationships+between+the+main+business+processes+of+the+enterprise%0D%0A%E2%80%A2++Mapping+of+business+processes+onto+business+functions%0D%0A%E2%80%A2++Realization+of+services+by+business+processes%0D%0A%E2%80%A2++Use+of+shared+data%0D%0A%0D%0AEach+of+these+can+be+regarded+as+a+%E2%80%9Csub-viewpoint%E2%80%9D+of+the+business+process+cooperation+viewpoint.")});
+													dataProperties.push({conceptid:"id-7b6796067503465dbd5172e14255b431", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Process+and+domain+architects%2C+operational+managers")});
+													dataProperties.push({conceptid:"id-7b6796067503465dbd5172e14255b431", propkey:decodeURL("Concerns"), propvalue:decodeURL("Dependencies+between+business+processes%2C+consistency+and+completeness%2C+responsibilities")});
+													dataProperties.push({conceptid:"id-7b6796067503465dbd5172e14255b431", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding")});
+													dataProperties.push({conceptid:"id-7b6796067503465dbd5172e14255b431", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-fbd6bf1cde6e4a08ae3b427a239092d3", type:"ArchimateDiagramModel", name:decodeURL("Application+Behaviour+View"), documentation:decodeURL("The+application+usage+viewpoint+describes+how+applications+are+used+to+support+one+or+more+business+processes%2C+and+how+they+are+used+by+other+applications.+It+can+be+used+in+designing+an+application+by+identifying+the+services+needed+by+business+processes+and+other+applications%2C+or+in+designing+business+processes+by+describing+the+services+that+are+available.+Furthermore%2C+since+it+identifies+the+dependencies+of+business+processes+upon+applications%2C+it+may+be+useful+to+operational+managers+responsible+for+these+processes.")});
+													dataProperties.push({conceptid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Enterprise%2C+process%2C+and+application+architects%2C+operational+manager")});
+													dataProperties.push({conceptid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", propkey:decodeURL("Concerns"), propvalue:decodeURL("Consistency+and+completeness%2C+reduction+of+complexity")});
+													dataProperties.push({conceptid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding")});
+													dataProperties.push({conceptid:"id-fbd6bf1cde6e4a08ae3b427a239092d3", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-ec1802b0f8d949908efa14d41d7703e1", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-ec1802b0f8d949908efa14d41d7703e1", type:"ArchimateDiagramModel", name:decodeURL("Technical+Infrastructure+View+"), documentation:decodeURL("The+technology+usage+viewpoint+shows+how+applications+are+supported+by+the+software+and+hardware+technology%3A+the+technology+services+are+delivered+by+the+devices%3B+system+software+and+networks+are+provided+to+the+applications.+This+viewpoint+plays+an+important+role+in+the+analysis+of+performance+and+scalability%2C+since+it+relates+the+physical+infrastructure+to+the+logical+world+of+applications.+It+is+very+useful+in+determining+the+performance+and+quality+requirements+on+the+infrastructure+based+on+the+demands+of+the+various+applications+that+use+it.")});
+													dataProperties.push({conceptid:"id-ec1802b0f8d949908efa14d41d7703e1", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Application%2C+infrastructure+architects%2C+operational+managers")});
+													dataProperties.push({conceptid:"id-ec1802b0f8d949908efa14d41d7703e1", propkey:decodeURL("Concerns"), propvalue:decodeURL("Dependencies%2C+performance%2C+scalability")});
+													dataProperties.push({conceptid:"id-ec1802b0f8d949908efa14d41d7703e1", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing")});
+													dataProperties.push({conceptid:"id-ec1802b0f8d949908efa14d41d7703e1", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-0ccf0e9ad34e49958ccee002a307f573", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-0ccf0e9ad34e49958ccee002a307f573", type:"ArchimateDiagramModel", name:decodeURL("Organisation+Structure+View"), documentation:decodeURL("The+organization+viewpoint+focuses+on+the+%28internal%29+organization+of+a+company%2C+department%2C+network+of+companies%2C+or+of+another+organizational+entity.+It+is+possible+to+present+models+in+this+viewpoint+as+nested+block+diagrams%2C+but+also+in+a+more+traditional+way%2C+such+as+organizational+charts.+The+organization+viewpoint+is+very+useful+in+identifying+competencies%2C+authority%2C+and+responsibilities+in+an+organization.")});
+													dataProperties.push({conceptid:"id-0ccf0e9ad34e49958ccee002a307f573", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Enterprise%2C+process+and+domain+architects%2C+managers%2C+employees%2C+shareholders")});
+													dataProperties.push({conceptid:"id-0ccf0e9ad34e49958ccee002a307f573", propkey:decodeURL("Concerns"), propvalue:decodeURL("Identification+of+competencies%2C+authority%2C+and+responsibilities")});
+													dataProperties.push({conceptid:"id-0ccf0e9ad34e49958ccee002a307f573", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding%2C+informing")});
+													dataProperties.push({conceptid:"id-0ccf0e9ad34e49958ccee002a307f573", propkey:decodeURL("Scope"), propvalue:decodeURL("Single+layer%2FSingle+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-017ee646d44a4b67b67cc0d3b6466aed", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-017ee646d44a4b67b67cc0d3b6466aed", type:"ArchimateDiagramModel", name:decodeURL("Organisation+Tree+View"), documentation:decodeURL("The+organization+viewpoint+focuses+on+the+%28internal%29+organization+of+a+company%2C+department%2C+network+of+companies%2C+or+of+another+organizational+entity.+It+is+possible+to+present+models+in+this+viewpoint+as+nested+block+diagrams%2C+but+also+in+a+more+traditional+way%2C+such+as+organizational+charts.+The+organization+viewpoint+is+very+useful+in+identifying+competencies%2C+authority%2C+and+responsibilities+in+an+organization.")});
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-902b18d6db784eb1a06f43eaa7007fa7", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-902b18d6db784eb1a06f43eaa7007fa7", type:"ArchimateDiagramModel", name:decodeURL("Application+Structure+View+"), documentation:decodeURL("The+application+structure+viewpoint+shows+the+structure+of+one+or+more+applications+or+components.+This+viewpoint+is+useful+in+designing+or+understanding+the+main+structure+of+applications+or+components+and+the+associated+data%3B+e.g.%2C+to+break+down+the+structure+of+the+system+under+construction%2C+or+to+identify+legacy+application+components+that+are+suitable+for+migration%2Fintegration.")});
+													dataProperties.push({conceptid:"id-902b18d6db784eb1a06f43eaa7007fa7", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Application+and+solution+architects")});
+													dataProperties.push({conceptid:"id-902b18d6db784eb1a06f43eaa7007fa7", propkey:decodeURL("Concerns"), propvalue:decodeURL("Application+structure%2C+consistency+and+completeness%2C+reduction+of+complexity")});
+													dataProperties.push({conceptid:"id-902b18d6db784eb1a06f43eaa7007fa7", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing")});
+													dataProperties.push({conceptid:"id-902b18d6db784eb1a06f43eaa7007fa7", propkey:decodeURL("Scope"), propvalue:decodeURL("Single+layer%2FMultiple+aspect")});
+
+									dataFoldersContent.push({folderid:"id-635f175a018d4fd5adcff1a7e54560e9", contentid:"id-ce7c4d622d52475b8e4b17c87e03384d", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-ce7c4d622d52475b8e4b17c87e03384d", type:"ArchimateDiagramModel", name:decodeURL("Service+Realisation+View+"), documentation:decodeURL("The+service+realization+viewpoint+is+used+to+show+how+one+or+more+business+services+are+realized+by+the+underlying+processes+%28and+sometimes+by+application+components%29.+Thus%2C+it+forms+the+bridge+between+the+business+products+viewpoint+and+the+business+process+view.+It+provides+a+%E2%80%9Cview+from+the+outside%E2%80%9D+on+one+or+more+business+processes.")});
+													dataProperties.push({conceptid:"id-ce7c4d622d52475b8e4b17c87e03384d", propkey:decodeURL("Stakeholders"), propvalue:decodeURL("Process+and+domain+architects%2C+product+and+operational+managers")});
+													dataProperties.push({conceptid:"id-ce7c4d622d52475b8e4b17c87e03384d", propkey:decodeURL("Concerns"), propvalue:decodeURL("Added-value+of+business+processes%2C+consistency+and+completeness%2C+responsibilities")});
+													dataProperties.push({conceptid:"id-ce7c4d622d52475b8e4b17c87e03384d", propkey:decodeURL("Purpose"), propvalue:decodeURL("Designing%2C+deciding")});
+													dataProperties.push({conceptid:"id-ce7c4d622d52475b8e4b17c87e03384d", propkey:decodeURL("Scope"), propvalue:decodeURL("Multiple+layer%2FMultiple+aspect")});
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

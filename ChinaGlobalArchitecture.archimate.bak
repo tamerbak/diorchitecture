@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="China Global Architecture" id="id-356204e9e60d4f6f814b59d2f15a3e65" version="4.9.0">
+  <folder name="Strategy" id="id-c7ff0312112249b4aaae569fed60a81c" type="strategy">
+    <element xsi:type="archimate:Capability" name="Capability" id="id-819e4ceb8ce44923a88e22629d082579"/>
+  </folder>
+  <folder name="Business" id="id-a5b606e3c5fa447aba278109ffaf70be" type="business">
+    <element xsi:type="archimate:BusinessActor" name="SA" id="id-245f7e6a08cd4410aff2dc11c78f8658"/>
+    <element xsi:type="archimate:BusinessActor" name="SM" id="id-226ebdcf156d4da58368f235066aea55"/>
+    <element xsi:type="archimate:BusinessActor" name="Client" id="id-d9b14e8780d843188e389ee321f86486"/>
+    <element xsi:type="archimate:BusinessActor" name="CSC Agent" id="id-699f76c30596466eb50be01e2a67730c"/>
+    <element xsi:type="archimate:BusinessInterface" name="DSW MP" id="id-59a298ec15f74ae8b1095dc586adc1b5"/>
+    <element xsi:type="archimate:BusinessInterface" name="Wishlist Pages" id="id-54bbae8569c0429eb32d71317caa070e"/>
+  </folder>
+  <folder name="Application" id="id-59839be2ba774e849f5bfa7e9d9aabf3" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Salesforce" id="id-c7678ee3901c48e39f56bc5ddfa2adb6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="DSW BFF" id="id-9314d64723724584b11bbbd8fcedec86"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Elastic Serge" id="id-16daaca49e874354b2c42a52c2e8c672"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Cegid Y2" id="id-c830fe12a70d4b1aa288be0a54a44cf9"/>
+    <element xsi:type="archimate:ApplicationInterface" name="APIM CN" id="id-118c7402f3564ebd96b69824907bee30"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Mulesoft CN" id="id-80a32c190d9a49e58270776e4ba4c8d0"/>
+    <element xsi:type="archimate:ApplicationComponent" name="CIM CN" id="id-28f58f1f42894c0bbcafd211d0beca7e"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Application Interface" id="id-83223cce4a504f54bfe6073ab3a1cf92"/>
+    <element xsi:type="archimate:ApplicationComponent" name="AZ Functions" id="id-6ad870925857484ba4af8f2dd08626c5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="AZ Func Replications" id="id-8a624b58fb104feabdee3a149cd4edc5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Wishlist Webapp" id="id-2655e87bee664ea58bc0922c2bcfeae8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="DSW MP" id="id-fedfc911bac94fc89860083054106547"/>
+    <element xsi:type="archimate:ApplicationInterface" name="H5 Wishlist Page" id="id-25b167206f924fa8bc7636ac20d95ec3"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-b49a926e4e8843b78cc2335c4ac86d89" type="technology"/>
+  <folder name="Motivation" id="id-5343f514ae124e5b991c759e637d9149" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-cbfeaa9cfc6a4ccd89d28eb390a2b96a" type="implementation_migration"/>
+  <folder name="Other" id="id-d0b0c5aa58564118934bb76cbc05d257" type="other">
+    <element xsi:type="archimate:Grouping" name="WeChat" id="id-136bc4d81fe54003bf49cf9898de425f"/>
+  </folder>
+  <folder name="Relations" id="id-737fa607958e429fb13d8457af2e6514" type="relations">
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-510d4fae775646d891e2bb0d80adb506" source="id-2655e87bee664ea58bc0922c2bcfeae8" target="id-25b167206f924fa8bc7636ac20d95ec3"/>
+  </folder>
+  <folder name="Views" id="id-635f175a018d4fd5adcff1a7e54560e9" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="China Architecture Map" id="id-a731f7b215704f618d1d6a73ce5c7a8b">
+      <child xsi:type="archimate:DiagramModelReference" id="id-1c33f9ad46be404dae8287ebfd034059" fillColor="#ff8080" model="id-f0ffa76402a84711b04e89ca76f41d71">
+        <bounds x="504" y="180" width="888" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-ed7280068a2c45f2996bd028a7f52e98" fillColor="#ffff80" model="id-544f076a1c2a45b5b49afd7e1e267a25">
+        <bounds x="504" y="252" width="85" height="541"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-b40636c124e242d98483c6a2b60824ad" fillColor="#ff80ff" model="id-dad68a9d68c1403893aa81b32e9a212c">
+        <bounds x="612" y="252" width="649" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-8cda6570f21c4cf4aecfa9bbdc7f5b77" fillColor="#80ffff" model="id-627f4d17c878496ea61cc81872c10fc0">
+        <bounds x="612" y="324" width="205" height="385"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-b89295fd31344709987a23a4e15e22f3" fillColor="#ff80c0" model="id-5862d04861c44c2c992651266f7488d3">
+        <bounds x="840" y="324" width="181" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-0a7a6e1ea481481b9803fbca781a3e8c" fillColor="#ff80c0" model="id-7b6796067503465dbd5172e14255b431">
+        <bounds x="840" y="420" width="181" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-412c7e5aae4241ed8e0b2ac3e602d4f6" fillColor="#0080ff" model="id-fbd6bf1cde6e4a08ae3b427a239092d3">
+        <bounds x="840" y="516" width="181" height="193"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-457428e26e90465b9017a62d5cee06f9" fillColor="#ff80c0" model="id-0ccf0e9ad34e49958ccee002a307f573">
+        <bounds x="1044" y="324" width="217" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-14c4515c80744826a54d4a77f717b438" fillColor="#ff80c0" model="id-017ee646d44a4b67b67cc0d3b6466aed">
+        <bounds x="1044" y="420" width="217" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-7e73ae718d6242ff907a3837ce6e59c3" fillColor="#0080ff" model="id-902b18d6db784eb1a06f43eaa7007fa7">
+        <bounds x="1044" y="516" width="217" height="193"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-c457cd8518e94602900ddb5bb7cc89b9" fillColor="#80ff80" model="id-ec1802b0f8d949908efa14d41d7703e1">
+        <bounds x="612" y="732" width="649" height="61"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="id-f5aa657313044e399102bc5c12068a66" fillColor="#00ff80" model="id-ce7c4d622d52475b8e4b17c87e03384d">
+        <bounds x="1284" y="252" width="108" height="541"/>
+      </child>
+      <documentation>Map View with View References to all the other Views in the model</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Goal and Principal View" id="id-f0ffa76402a84711b04e89ca76f41d71" viewpoint="goal_realization">
+      <documentation>The goal realization viewpoint allows to model the refinement of (high-level) goals into more tangible goals, and the refinement of tangible goals into requirements or constraints that describe the properties that are needed to realize the goals. The refinement of goals into sub-goals is modeled using the aggregation relationship. The refinement of goals into requirements is modeled using the realization relationship.&#xD;
+&#xD;
+In addition, the principles may be modeled that guide the refinement of goals into requirements.</documentation>
+      <property key="Stakeholders" value="Stakeholders, business managers, enterprise and ICT architects, business analysts, requirements managers"/>
+      <property key="Concerns" value="Architecture mission, strategy and tactics, motivation"/>
+      <property key="Purpose" value="Designing, deciding"/>
+      <property key="Scope" value="Motivation"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Business Product View" id="id-dad68a9d68c1403893aa81b32e9a212c" viewpoint="product">
+      <documentation>The product viewpoint depicts the value that these products offer to the customers or other external parties involved and shows the composition of one or more products in terms of the constituting (business, application, or technology) services, and the associated contract(s) or other agreements. It may also be used to show the interfaces (channels) through which this product is offered, and the events associated with the product. A product viewpoint is typically used in product development to design a product by composing existing services or by identifying which new services have to be created for this product, given the value a customer expects from it. It may then serve as input for business process architects and others that need to design the processes and ICT realizing these products.</documentation>
+      <property key="Stakeholders" value="Product developers, product managers, process and domain architects"/>
+      <property key="Concerns" value="Product development, value offered by the products of the enterprise"/>
+      <property key="Purpose" value="Designing, deciding"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Layered View" id="id-544f076a1c2a45b5b49afd7e1e267a25" viewpoint="layered">
+      <documentation>The layered viewpoint pictures several layers and aspects of an Enterprise Architecture in one diagram. There are two categories of layers, namely dedicated layers and service layers. The layers are the result of the use of the “grouping” relationship for a natural partitioning of the entire set of objects and relationships that belong to a model. The technology, application, process, and actor/role layers belong to the first category. The structural principle behind a fully layered viewpoint is that each dedicated layer exposes, by means of the “realization” relationship, a layer of services, which are further on “serving” the next dedicated layer. Thus, we can easily separate the internal structure and organization of a dedicated layer from its externally observable behavior expressed as the service layer that the dedicated layer realizes. The order, number, or nature of these layers are not fixed, but in general a (more or less) complete and natural layering of an ArchiMate model should contain the succession of layers depicted in the example given below. However, this example is by no means intended to be prescriptive. The main goal of the layered viewpoint is to provide an overview in one diagram. Furthermore, this viewpoint can be used as support for impact of change analysis and performance analysis or for extending the service portfolio.</documentation>
+      <property key="Stakeholders" value="Enterprise, process, application, infrastructure, and domain architects"/>
+      <property key="Concerns" value="Consistency, reduction of complexity, impact of change, flexibility"/>
+      <property key="Purpose" value="Designing, deciding, informing"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Information Structure View" id="id-627f4d17c878496ea61cc81872c10fc0" viewpoint="information_structure">
+      <documentation>The information structure viewpoint is comparable to the traditional information models created in the development of almost any information system. It shows the structure of the information used in the enterprise or in a specific business process or application, in terms of data types or (object-oriented) class structures. Furthermore, it may show how the information at the business level is represented at the application level in the form of the data structures used there, and how these are then mapped onto the underlying technology infrastructure; e.g., by means of a database schema.</documentation>
+      <property key="Stakeholders" value="Domain and information architects"/>
+      <property key="Concerns" value="Structure and dependencies of the used data and information, consistency and completeness"/>
+      <property key="Purpose" value="Designing"/>
+      <property key="Scope" value="Multiple layer/Single aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Business Function View" id="id-5862d04861c44c2c992651266f7488d3">
+      <documentation>Shows the main business functions of an organization and their relationships in terms of the flows of information, value, or goods between them. Business functions are used to represent the most stable aspects of a company in terms of the primary activities it performs, regardless of organizational changes or technological developments. Therefore, the business function architecture of companies that operate in the same market often exhibit close similarities. The business function example provides high-level insight in the general operations of the company, and can be used to identify necessary competencies, or to structure an organization according to its main activities.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Business Process View " id="id-7b6796067503465dbd5172e14255b431" viewpoint="strategy">
+      <documentation>The business process cooperation viewpoint is used to show the relationships of one or more business processes with each other and/or with their environment. It can be used both to create a high-level design of business processes within their context and to provide an operational manager responsible for one or more such processes with insight into their dependencies. Important aspects of business process cooperation are:&#xD;
+•  Causal relationships between the main business processes of the enterprise&#xD;
+•  Mapping of business processes onto business functions&#xD;
+•  Realization of services by business processes&#xD;
+•  Use of shared data&#xD;
+&#xD;
+Each of these can be regarded as a “sub-viewpoint” of the business process cooperation viewpoint.</documentation>
+      <property key="Stakeholders" value="Process and domain architects, operational managers"/>
+      <property key="Concerns" value="Dependencies between business processes, consistency and completeness, responsibilities"/>
+      <property key="Purpose" value="Designing, deciding"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Application Behaviour View" id="id-fbd6bf1cde6e4a08ae3b427a239092d3" viewpoint="application_usage">
+      <documentation>The application usage viewpoint describes how applications are used to support one or more business processes, and how they are used by other applications. It can be used in designing an application by identifying the services needed by business processes and other applications, or in designing business processes by describing the services that are available. Furthermore, since it identifies the dependencies of business processes upon applications, it may be useful to operational managers responsible for these processes.</documentation>
+      <property key="Stakeholders" value="Enterprise, process, and application architects, operational manager"/>
+      <property key="Concerns" value="Consistency and completeness, reduction of complexity"/>
+      <property key="Purpose" value="Designing, deciding"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Technical Infrastructure View " id="id-ec1802b0f8d949908efa14d41d7703e1" viewpoint="technology_usage">
+      <documentation>The technology usage viewpoint shows how applications are supported by the software and hardware technology: the technology services are delivered by the devices; system software and networks are provided to the applications. This viewpoint plays an important role in the analysis of performance and scalability, since it relates the physical infrastructure to the logical world of applications. It is very useful in determining the performance and quality requirements on the infrastructure based on the demands of the various applications that use it.</documentation>
+      <property key="Stakeholders" value="Application, infrastructure architects, operational managers"/>
+      <property key="Concerns" value="Dependencies, performance, scalability"/>
+      <property key="Purpose" value="Designing"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Organisation Structure View" id="id-0ccf0e9ad34e49958ccee002a307f573" viewpoint="organization">
+      <documentation>The organization viewpoint focuses on the (internal) organization of a company, department, network of companies, or of another organizational entity. It is possible to present models in this viewpoint as nested block diagrams, but also in a more traditional way, such as organizational charts. The organization viewpoint is very useful in identifying competencies, authority, and responsibilities in an organization.</documentation>
+      <property key="Stakeholders" value="Enterprise, process and domain architects, managers, employees, shareholders"/>
+      <property key="Concerns" value="Identification of competencies, authority, and responsibilities"/>
+      <property key="Purpose" value="Designing, deciding, informing"/>
+      <property key="Scope" value="Single layer/Single aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Organisation Tree View" id="id-017ee646d44a4b67b67cc0d3b6466aed" viewpoint="organization">
+      <documentation>The organization viewpoint focuses on the (internal) organization of a company, department, network of companies, or of another organizational entity. It is possible to present models in this viewpoint as nested block diagrams, but also in a more traditional way, such as organizational charts. The organization viewpoint is very useful in identifying competencies, authority, and responsibilities in an organization.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Application Structure View " id="id-902b18d6db784eb1a06f43eaa7007fa7" viewpoint="application_structure">
+      <child xsi:type="archimate:DiagramObject" id="id-4f42c06c39834a1e99e901f89a07bd57" archimateElement="id-118c7402f3564ebd96b69824907bee30">
+        <bounds x="835" y="444" width="305" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-7c725f7e6f4149809bb03bf049c49f1d" archimateElement="id-6ad870925857484ba4af8f2dd08626c5">
+        <bounds x="1020" y="540" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-693fbf2d500c4589adc064d21ad817b5" archimateElement="id-8a624b58fb104feabdee3a149cd4edc5">
+        <bounds x="835" y="540" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Group" id="id-5893722d9dee44caa559d38dd5f101de" name="WeCom Work" textAlignment="1">
+        <bounds x="600" y="228" width="400" height="169"/>
+        <child xsi:type="archimate:DiagramObject" id="id-83b6ff04670640e0b900398d3a7a0900" archimateElement="id-fedfc911bac94fc89860083054106547">
+          <bounds x="48" y="24" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9ce9fa610f6a40adb220d0d835d278aa" archimateElement="id-9314d64723724584b11bbbd8fcedec86">
+          <bounds x="108" y="96" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-f163ed4e9dc2422482794f20381cb3b7" name="WeChat" textAlignment="1">
+        <bounds x="1164" y="264" width="400" height="217"/>
+        <child xsi:type="archimate:DiagramObject" id="id-51f157194ded4a4b97bad8879a477467" targetConnections="id-e299c8260f1044498c5ff0ec0c9cc8c6" archimateElement="id-25b167206f924fa8bc7636ac20d95ec3">
+          <bounds x="48" y="24" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3b1c3607ce8d4ce8bcff9150ac273f96" archimateElement="id-2655e87bee664ea58bc0922c2bcfeae8">
+          <bounds x="48" y="120" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e299c8260f1044498c5ff0ec0c9cc8c6" source="id-3b1c3607ce8d4ce8bcff9150ac273f96" target="id-51f157194ded4a4b97bad8879a477467" archimateRelationship="id-510d4fae775646d891e2bb0d80adb506"/>
+        </child>
+      </child>
+      <documentation>The application structure viewpoint shows the structure of one or more applications or components. This viewpoint is useful in designing or understanding the main structure of applications or components and the associated data; e.g., to break down the structure of the system under construction, or to identify legacy application components that are suitable for migration/integration.</documentation>
+      <property key="Stakeholders" value="Application and solution architects"/>
+      <property key="Concerns" value="Application structure, consistency and completeness, reduction of complexity"/>
+      <property key="Purpose" value="Designing"/>
+      <property key="Scope" value="Single layer/Multiple aspect"/>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Service Realisation View " id="id-ce7c4d622d52475b8e4b17c87e03384d" viewpoint="stakeholder">
+      <documentation>The service realization viewpoint is used to show how one or more business services are realized by the underlying processes (and sometimes by application components). Thus, it forms the bridge between the business products viewpoint and the business process view. It provides a “view from the outside” on one or more business processes.</documentation>
+      <property key="Stakeholders" value="Process and domain architects, product and operational managers"/>
+      <property key="Concerns" value="Added-value of business processes, consistency and completeness, responsibilities"/>
+      <property key="Purpose" value="Designing, deciding"/>
+      <property key="Scope" value="Multiple layer/Multiple aspect"/>
+    </element>
+  </folder>
+  <property key="Contributer" value="Tamer EL BAKKALI"/>
+  <property key="Validator" value="Fabien GASSER"/>
+  <purpose>Current global China architecture</purpose>
+</archimate:model>

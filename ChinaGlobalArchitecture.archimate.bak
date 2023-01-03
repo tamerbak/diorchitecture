@@ -25,6 +25,12 @@
     <element xsi:type="archimate:ApplicationComponent" name="Wishlist Webapp" id="id-2655e87bee664ea58bc0922c2bcfeae8"/>
     <element xsi:type="archimate:ApplicationComponent" name="DSW MP" id="id-fedfc911bac94fc89860083054106547"/>
     <element xsi:type="archimate:ApplicationInterface" name="H5 Wishlist Page" id="id-25b167206f924fa8bc7636ac20d95ec3"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Wechat Apex" id="id-64f40366795f49a689ca31c1f4d9dcbb"/>
+    <element xsi:type="archimate:ApplicationComponent" name="D1M" id="id-2033fdf0915d43c5ab22e350c5ffcf07"/>
+    <element xsi:type="archimate:ApplicationInterface" name="H5 D1M Page" id="id-1b551f82ae8446349b74b8b5e2f1b839"/>
+    <element xsi:type="archimate:ApplicationComponent" name="D1M Server" id="id-940a7338d0e94086aad0b8c276bf1f1e"/>
+    <element xsi:type="archimate:ApplicationService" name="D1M Service" id="id-1dfff1f6bb364e71a7ba94c6ebd6c727"/>
+    <element xsi:type="archimate:ApplicationService" id="id-197b3e8c3fc7494dbcc488a52ecdc179"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-b49a926e4e8843b78cc2335c4ac86d89" type="technology"/>
   <folder name="Motivation" id="id-5343f514ae124e5b991c759e637d9149" type="motivation"/>
@@ -34,6 +40,8 @@
   </folder>
   <folder name="Relations" id="id-737fa607958e429fb13d8457af2e6514" type="relations">
     <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-510d4fae775646d891e2bb0d80adb506" source="id-2655e87bee664ea58bc0922c2bcfeae8" target="id-25b167206f924fa8bc7636ac20d95ec3"/>
+    <element xsi:type="archimate:ServingRelationship" name="Serving" id="id-08234704140b4a8d84417c10cf62effb" source="id-9314d64723724584b11bbbd8fcedec86" target="id-fedfc911bac94fc89860083054106547"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-2b179ac2fa3f4967afded3191163f4f3" source="id-940a7338d0e94086aad0b8c276bf1f1e" target="id-1b551f82ae8446349b74b8b5e2f1b839"/>
   </folder>
   <folder name="Views" id="id-635f175a018d4fd5adcff1a7e54560e9" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="China Architecture Map" id="id-a731f7b215704f618d1d6a73ce5c7a8b">
@@ -146,32 +154,52 @@ Each of these can be regarded as a “sub-viewpoint” of the business process c
       <documentation>The organization viewpoint focuses on the (internal) organization of a company, department, network of companies, or of another organizational entity. It is possible to present models in this viewpoint as nested block diagrams, but also in a more traditional way, such as organizational charts. The organization viewpoint is very useful in identifying competencies, authority, and responsibilities in an organization.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Application Structure View " id="id-902b18d6db784eb1a06f43eaa7007fa7" viewpoint="application_structure">
-      <child xsi:type="archimate:DiagramObject" id="id-4f42c06c39834a1e99e901f89a07bd57" archimateElement="id-118c7402f3564ebd96b69824907bee30">
-        <bounds x="835" y="444" width="305" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-7c725f7e6f4149809bb03bf049c49f1d" archimateElement="id-6ad870925857484ba4af8f2dd08626c5">
-        <bounds x="1020" y="540" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="id-693fbf2d500c4589adc064d21ad817b5" archimateElement="id-8a624b58fb104feabdee3a149cd4edc5">
-        <bounds x="835" y="540" width="120" height="55"/>
-      </child>
       <child xsi:type="archimate:Group" id="id-5893722d9dee44caa559d38dd5f101de" name="WeCom Work" textAlignment="1">
-        <bounds x="600" y="228" width="400" height="169"/>
-        <child xsi:type="archimate:DiagramObject" id="id-83b6ff04670640e0b900398d3a7a0900" archimateElement="id-fedfc911bac94fc89860083054106547">
-          <bounds x="48" y="24" width="120" height="55"/>
+        <bounds x="264" y="180" width="193" height="217"/>
+        <child xsi:type="archimate:DiagramObject" id="id-83b6ff04670640e0b900398d3a7a0900" targetConnections="id-3318444c0c89481e8e107be6f2ab5acd" archimateElement="id-fedfc911bac94fc89860083054106547">
+          <bounds x="24" y="24" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-9ce9fa610f6a40adb220d0d835d278aa" archimateElement="id-9314d64723724584b11bbbd8fcedec86">
-          <bounds x="108" y="96" width="120" height="55"/>
+          <bounds x="24" y="132" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3318444c0c89481e8e107be6f2ab5acd" source="id-9ce9fa610f6a40adb220d0d835d278aa" target="id-83b6ff04670640e0b900398d3a7a0900" archimateRelationship="id-08234704140b4a8d84417c10cf62effb"/>
         </child>
       </child>
       <child xsi:type="archimate:Group" id="id-f163ed4e9dc2422482794f20381cb3b7" name="WeChat" textAlignment="1">
-        <bounds x="1164" y="264" width="400" height="217"/>
+        <bounds x="492" y="180" width="301" height="217"/>
         <child xsi:type="archimate:DiagramObject" id="id-51f157194ded4a4b97bad8879a477467" targetConnections="id-e299c8260f1044498c5ff0ec0c9cc8c6" archimateElement="id-25b167206f924fa8bc7636ac20d95ec3">
-          <bounds x="48" y="24" width="120" height="55"/>
+          <bounds x="24" y="36" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-3b1c3607ce8d4ce8bcff9150ac273f96" archimateElement="id-2655e87bee664ea58bc0922c2bcfeae8">
-          <bounds x="48" y="120" width="120" height="55"/>
+          <bounds x="24" y="144" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e299c8260f1044498c5ff0ec0c9cc8c6" source="id-3b1c3607ce8d4ce8bcff9150ac273f96" target="id-51f157194ded4a4b97bad8879a477467" archimateRelationship="id-510d4fae775646d891e2bb0d80adb506"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bba42f092b3a4ada9012d7dbd8e1f3ec" targetConnections="id-809cb27ce5124d288fdf8db28f3e6f16" archimateElement="id-1b551f82ae8446349b74b8b5e2f1b839">
+          <bounds x="168" y="36" width="109" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-2fe12d5f6e6040cfad3ecbb5949c62b1" name="Azure China" textAlignment="1">
+        <bounds x="264" y="420" width="421" height="265"/>
+        <child xsi:type="archimate:DiagramObject" id="id-4f42c06c39834a1e99e901f89a07bd57" archimateElement="id-118c7402f3564ebd96b69824907bee30">
+          <bounds x="168" y="36" width="241" height="37"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bb45a7265b9643299e58b425b1bbff10" archimateElement="id-64f40366795f49a689ca31c1f4d9dcbb">
+          <bounds x="18" y="36" width="138" height="38"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-01934a1d818e47f88fc5ca4ff5f32728" archimateElement="id-c7678ee3901c48e39f56bc5ddfa2adb6">
+          <bounds x="18" y="96" width="391" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-693fbf2d500c4589adc064d21ad817b5" archimateElement="id-8a624b58fb104feabdee3a149cd4edc5">
+          <bounds x="18" y="168" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7c725f7e6f4149809bb03bf049c49f1d" archimateElement="id-6ad870925857484ba4af8f2dd08626c5">
+          <bounds x="168" y="168" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-85bf18cf80f040c7a6820f6259e622ca" name="D1M" textAlignment="1">
+        <bounds x="840" y="204" width="229" height="121"/>
+        <child xsi:type="archimate:DiagramObject" id="id-9ad15f53cc37485fb3e80eeae51d2120" archimateElement="id-940a7338d0e94086aad0b8c276bf1f1e">
+          <bounds x="96" y="24" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-809cb27ce5124d288fdf8db28f3e6f16" source="id-9ad15f53cc37485fb3e80eeae51d2120" target="id-bba42f092b3a4ada9012d7dbd8e1f3ec" archimateRelationship="id-2b179ac2fa3f4967afded3191163f4f3"/>
         </child>
       </child>
       <documentation>The application structure viewpoint shows the structure of one or more applications or components. This viewpoint is useful in designing or understanding the main structure of applications or components and the associated data; e.g., to break down the structure of the system under construction, or to identify legacy application components that are suitable for migration/integration.</documentation>
